@@ -1,546 +1,265 @@
 <!DOCTYPE html>
-
-<html data-lt-installed="true">
+<html lang="de">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>W3.CSS Template</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/w3.css" />
-    <link rel="stylesheet" href="./css/w3-theme-black.css" />
+    <!-- CSS only -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./css/own-css.css" />
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Gadgets</title>
+    <link rel="stylesheet" href="css/stylemain.css">
   </head>
+  <body>
 
-  <body id="myPage">
-    <!-- Sidebar on click -->
-    <nav
-      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge"
-      style="display: none; z-index: 2"
-      id="mySidebar"
-    >
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button w3-display-topright w3-text-black"
-        >Close
-        <i class="fa fa-remove"></i>
-      </a>
-      <a href="./index.html#" class="w3-bar-item w3-button">Link 1</a>
-      <a href="./index.html#" class="w3-bar-item w3-button">Link 2</a>
-      <a href="./index.html#" class="w3-bar-item w3-button">Link 3</a>
-      <a href="./index.html#" class="w3-bar-item w3-button">Link 4</a>
-      <a href="./index.html#" class="w3-bar-item w3-button">Link 5</a>
+    <div id="top" class="slider-container">
+      <div class="slider">
+        <img class="img-banner" src="img/banner.png" alt="banner">
+        <img class="img-banner" src="img/banner-2.jpg" alt="banner">
+        <img class="img-banner" src="img/banner-3.jpg" alt="banner">
+        <img class="img-banner" src="img/banner-4.jpg" alt="banner">
+      </div>
+    </div>
+
+      <nav id="topbar" class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="navbar-toggler" type="dropdown" data-toggle="collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul id="Dropdown" class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="01-register.html">Support</a></li>
+                <li><a class="dropdown-item" href="02-team.html">Team</a></li>
+                <li><a class="dropdown-item" href="03-login.html">Log In</a></li>
+                <li><a class="dropdown-item" href="01-register.html">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav mr-auto"></ul>
+        <div class="col-lg">
+          <a href="index.html">
+            <img class="logoimg" id="Logo" src="img/logo.png" height="70">
+          </a>
+        </div>
+
+        <div class="col-lg" id="prod1">
+          <a class="nav-item">
+            <a class="nav-link2" href="index.html">Home</a>
+          </a>
+        </div>
+
+        <div class="col-lg" id="prod2">
+          <a class="nav-item">
+            <a class="nav-link2" href="01-register.html">Support</a>
+          </a>
+        </div>
+
+        <div class="col-lg">
+          <a class="nav-item" id="prod3">
+            <a class="nav-link2" href="02-team.html">Team</a>
+          </a>
+        </div>
+
+        <div class="col-lg">
+          <a class="nav-item" id="prod3">
+            <a class="nav-link2" href="03-login.html">Log In</a>
+          </a>
+        </div>
+
+        <div class="col-lg">
+          <a class="nav-item" id="prod3">
+            <a class="nav-link2" href="01-register.html">Register</a>
+          </a>
+        </div>
+      </div>
     </nav>
+    <h1>Smart-gadgets</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="prod1"><img src="img/screenprot.jpg" width="auto" height="200"
+              alt="bild" class="center">Screen Protector 1
+            <p class="description">Beschreibung vom Produkt</p>
+            <p>20.-</p>
+          </div>
 
-    <!-- Navbar -->
-    <div id="top" class="w3-top">
-      <div class="w3-bar w3-theme-d2 w3-left-align">
-        <a
-          class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
-          href="javascript:void(0);"
-          onclick="openNav()"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a href="./index.html#" class="w3-bar-item w3-button w3-black"
-          ><i class="fa fa-home w3-margin-right"></i>Logo</a
-        >
-        <a
-          href="./index.html#team"
-          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
-          >Team</a
-        >
-        <a
-          href="./index.html#work"
-          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
-          >Locations</a
-        >
-        <a
-          href="./index.html#pricing"
-          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
-          >Offers</a
-        >
-        <a
-          href="./index.html#contact"
-          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
-          >Contact Us!</a
-        >
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button" title="Notifications">
-            Location Homepages <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="./index.html#" class="w3-bar-item w3-button"
-              >New York Homepage</a
-            >
-            <a href="./index.html#" class="w3-bar-item w3-button"
-              >Bern Homepage</a
-            >
-            <a href="./index.html#" class="w3-bar-item w3-button"
-              >Sydney Homepage</a
-            >
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="prod1"><img src="img/handycase.png" width="auto" height="200"
+              alt="bild" class="centercase">Handy case 1
+            <p class="description">Beschreibung vom Produkt</p>
+            <p>50.-</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="prod1"><img src="img/handy.png" width="auto" height="200"
+              alt="bild" class="center">Handy 1
+            <p class="description">Beschreibung vom Produkt</p>
+            <p>999.-</p>
           </div>
         </div>
-        <a
-          href="./index.html#"
-          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black"
-          title="Search"
-          ><i class="fa fa-search"></i
-        ></a>
-      </div>
-
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium"
-      >
-        <a href="./index.html#team" class="w3-bar-item w3-button">Team</a>
-        <a href="./index.html#work" class="w3-bar-item w3-button">Locations</a>
-        <a href="./index.html#pricing" class="w3-bar-item w3-button">Offers</a>
-        <a href="./index.html#contact" class="w3-bar-item w3-button">Contact</a>
-        <a href="./index.html#" class="w3-bar-item w3-button">Search</a>
-      </div>
-    </div>
-
-    <!-- Image Header -->
-    <div class="w3-display-container w3-animate-opacity">
-      <img
-        src="./img/banner-motherboard.jpg"
-        class="boat"
-        alt="boat"
-        style="width: 100%"
-      />
-      <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-        <button
-          onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;"
-          class="w3-button w3-xlarge w3-theme modal-btn"
-          title="Go To W3.CSS"
-        >
-          W-HOSTING
-        </button>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-card-4 w3-animate-top">
-        <header class="w3-container w3-black w3-display-container">
-          <span
-            onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;"
-            class="w3-button w3-display-topright"
-            ><i class="fa fa-remove"></i
-          ></span>
-          <h4>Impressum</h4>
-        </header>
-        <div class="w3-container">
-          <h4>Unsere Adresse</h4>
-          <p>W-HOSTING AG</p>
-          <p>Superstrasse 99</p>
-          <p>3000 Bern</p>
-
-          <h4>So erreichen sie uns</h4>
-          <p>Telefon: +41 31 000 00 00</p>
-          <p>w-hosting@email.com</p>
-
-          <h4>Geschäftsführer</h4>
-          <p>Rainer Winkler</p>
-        </div>
-        <footer class="w3-container w3-black">
-          <p>Lorem ipsum</p>
-        </footer>
-      </div>
-    </div>
-
-    <!-- Team Container -->
-    <div class="w3-container w3-padding-64 w3-center" id="team">
-      <h2>OUR TEAM</h2>
-
-      <div class="w3-row">
-        <br />
-
-        <div class="w3-quarter">
-          <img
-            src="./img/team-avatar.jpg"
-            alt="Boss"
-            style="width: 45%"
-            class="w3-circle w3-hover-opacity"
-          />
-          <h3>Johnny Walker</h3>
-          <p>Web Designer</p>
-        </div>
-
-        <div class="w3-quarter">
-          <img
-            src="./img/team-avatar.jpg"
-            alt="Boss"
-            style="width: 45%"
-            class="w3-circle w3-hover-opacity"
-          />
-          <h3>Rebecca Flex</h3>
-          <p>Support</p>
-        </div>
-
-        <div class="w3-quarter">
-          <img
-            src="./img/team-avatar.jpg"
-            alt="Boss"
-            style="width: 45%"
-            class="w3-circle w3-hover-opacity"
-          />
-          <h3>Rainer Winkler</h3>
-          <p>Boss man</p>
-        </div>
-
-        <div class="w3-quarter">
-          <img
-            src="./img/team-avatar.jpg"
-            alt="Boss"
-            style="width: 45%"
-            class="w3-circle w3-hover-opacity"
-          />
-          <h3>Kai Ringo</h3>
-          <p>Fixer</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Work Row -->
-    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-      <div class="w3-quarter">
-        <h2>Our Work</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-
-      <div class="w3-quarter location-element">
-        <div class="w3-card w3-white">
-          <img
-            src="./img/location-new-york.jpg"
-            alt="new-york"
-            style="width: 100%"
-          />
-          <div class="w3-container">
-            <h3>New York</h3>
-            <h4>Headquarters</h4>
-            <p>Goodstreet 15</p>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="prod1"><img src="img/popsocket.png" width="auto" height="200"
+              alt="bild" class="center">Handy gadgets 1
+            <p class="description">Beschreibung vom Produkt</p>
+            <p>15.-</p>
           </div>
         </div>
-      </div>
 
-      <div class="w3-quarter location-element">
-        <div class="w3-card w3-white">
-          <img src="./img/location-bern.jpg" alt="bern" style="width: 100%" />
-          <div class="w3-container">
-            <h3>Bern</h3>
-            <h4>EU Location</h4>
-            <p>Betterstreet 77</p>
-          </div>
-        </div>
-      </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="prod1"><img src="img/screenprot.jpg" width="auto"
+                  height="200" alt="bild" class="center">Screen Protector 1
+                <p class="description">Beschreibung vom Produkt</p>
+                <p>20.-</p>
+              </div>
 
-      <div class="w3-quarter location-element">
-        <div class="w3-card w3-white">
-          <img
-            src="./img/location-sydney.jpg"
-            alt="sydney"
-            style="width: 100%"
-          />
-          <div class="w3-container">
-            <h3>Sydney</h3>
-            <h4>OCE Location</h4>
-            <p>Beststreet 999</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Container -->
-
-    <!-- Pricing Row -->
-    <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-      <h2>Our hosting offers</h2>
-      <p>Choose the packet that fits your needs.</p>
-      <br />
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-          <li class="w3-theme">
-            <p class="w3-xlarge">Low-tier Packet</p>
-          </li>
-          <li class="w3-padding-16"><b>10GB</b> Of storage for your Website</li>
-          <li class="w3-padding-16"><b>10</b> Emails</li>
-          <li class="w3-padding-16"><b>10</b> Domains</li>
-          <li class="w3-padding-16"><b>Endless</b> Support</li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-theme-l5 w3-padding-24">
-            <button class="w3-button w3-black w3-padding-large">
-              <i class="fa fa-check"></i> Sign Up
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-          <li class="w3-theme-l2">
-            <p class="w3-xlarge">Mid-tier Packet</p>
-          </li>
-          <li class="w3-padding-16"><b>50GB</b> Of storage for your Website</li>
-          <li class="w3-padding-16"><b>25</b> Emails</li>
-          <li class="w3-padding-16"><b>25</b> Domains</li>
-          <li class="w3-padding-16"><b>Endless</b> Support</li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-theme-l5 w3-padding-24">
-            <button class="w3-button w3-black w3-padding-large">
-              <i class="fa fa-check"></i> Sign Up
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-          <li class="w3-theme">
-            <p class="w3-xlarge">Hight-tier Packet</p>
-          </li>
-          <li class="w3-padding-16">
-            <b>100GB</b> Of storage for your Website
-          </li>
-          <li class="w3-padding-16"><b>50</b> Emails</li>
-          <li class="w3-padding-16"><b>50</b> Domains</li>
-          <li class="w3-padding-16"><b>Endless</b> Support</li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-theme-l5 w3-padding-24">
-            <button class="w3-button w3-black w3-padding-large">
-              <i class="fa fa-check"></i> Sign Up
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Contact Container -->
-    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-      <div class="w3-row">
-        <div class="w3-col m5">
-          <div class="w3-padding-16">
-            <span class="w3-xlarge w3-border-black w3-bottombar"
-              >Contact Us</span
-            >
-          </div>
-          <h3>Address</h3>
-          <p>If you have any problems you can reach out to us.</p>
-          <p>
-            <i class="fa fa-map-marker w3-text-black w3-xlarge"></i
-            >&nbsp;&nbsp;Bern, CH
-          </p>
-          <p>
-            <i class="fa fa-phone w3-text-black w3-xlarge"></i>&nbsp;&nbsp;+00
-            1515151515
-          </p>
-          <p>
-            <i class="fa fa-envelope-o w3-text-black w3-xlarge"></i
-            >&nbsp;&nbsp;test@test.com
-          </p>
-          <button id="changeButton">Submit Feedback</button>
-        </div>
-        <div class="w3-col m7">
-          <form
-            id="form"
-            class="w3-container w3-card-4 w3-padding-16 w3-white form-feedback"
-            action="https://www.w3schools.com/action_page.php"
-            target="_blank"
-          >
-            <div class="w3-section">
-              <label>Name</label>
-              <input class="w3-input" type="text" name="Name" required />
             </div>
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input" type="text" name="Email" required />
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="prod1"><img src="img/handycase.png" width="auto"
+                  height="200" alt="bild" class="centercase">Handy case 1
+                <p class="description">Beschreibung vom Produkt</p>
+                <p>50.-</p>
+              </div>
+
             </div>
-            <div class="w3-section">
-              <label>Message</label>
-              <input class="w3-input" type="text" name="Message" required />
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="prod1"><img src="img/handy.png" width="auto" height="200"
+                  alt="bild" class="center">Handy 1
+                <p class="description">Beschreibung vom Produkt</p>
+                <p>999.-</p>
+              </div>
             </div>
-            <input class="w3-check" type="checkbox" checked name="Like" />
-            <label>I Like it!</label>
-            <button type="submit" class="w3-button w3-right w3-theme">
-              Send
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="prod1"><img src="img/popsocket.png" width="auto"
+                  height="200" alt="bild" class="center">Handy gadgets 1
+                <p class="description">Beschreibung vom Produkt</p>
+                <p>15.-</p>
+              </div>
+            </div><div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="prod1"><img src="img/screenprot.jpg" width="auto"
+                      height="200" alt="bild" class="center">Screen Protector 1
+                    <p class="description">Beschreibung vom Produkt</p>
+                    <p>20.-</p>
+                  </div>
 
-    <!-- Video of location -->
-    <video
-  src="./img/video-new-york.mp4"
-  class="w3-image w3-greyscale-min"
-  style="width: 100%"
-  autoplay  
-  loop      
-  muted     
-></video>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="prod1"><img src="img/handycase.png" width="auto"
+                      height="200" alt="bild" class="centercase">Handy case 1
+                    <p class="description">Beschreibung vom Produkt</p>
+                    <p>50.-</p>
+                  </div>
 
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="prod1"><img src="img/handy.png" width="auto"
+                      height="200" alt="bild" class="center">Handy 1
+                    <p class="description">Beschreibung vom Produkt</p>
+                    <p>999.-</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                  <div class="prod1"><img src="img/popsocket.png" width="auto"
+                      height="200" alt="bild" class="center">Handy gadgets 1
+                    <p class="description">Beschreibung vom Produkt</p>
+                    <p>15.-</p>
+                  </div>
+                </div><div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                      <div class="prod1"><img src="img/screenprot.jpg" width="auto"
+                          height="200" alt="bild" class="center">Screen
+                        Protector 1
+                        <p class="description">Beschreibung vom Produkt</p>
+                        <p>20.-</p>
+                      </div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-      <h4>Follow Us</h4>
-      <a
-        class="w3-button w3-large w3-black facebook-btn"
-        href="javascript:void(0)"
-        title="Facebook"
-        ><i class="fa fa-facebook"></i
-      ></a>
-      <a
-        class="w3-button w3-large w3-black twitter-btn"
-        href="javascript:void(0)"
-        title="Twitter"
-        ><i class="fa fa-twitter"></i
-      ></a>
-      <a
-        class="w3-button w3-large w3-black"
-        href="javascript:void(0)"
-        title="You Tube"
-        ><i class="fa fa-youtube"></i
-      ></a>
-      <a
-        class="w3-button w3-large w3-black"
-        href="javascript:void(0)"
-        title="Instagram"
-        ><i class="fa fa-instagram"></i
-      ></a>
-      <a
-        class="w3-button w3-large w3-black w3-hide-small"
-        href="javascript:void(0)"
-        title="Linkedin"
-        ><i class="fa fa-linkedin"></i
-      ></a>
-      <p><a href="#" target></a></p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                      <div class="prod1"><img src="img/handycase.png" width="auto"
+                          height="200" alt="bild" class="centercase">Handy case
+                        1
+                        <p class="description">Beschreibung vom Produkt</p>
+                        <p>50.-</p>
+                      </div>
 
-      <div
-        style="position: relative; bottom: 100px; z-index: 1"
-        class="w3-tooltip w3-right"
-      >
-        <span class="w3-text w3-padding w3-black w3-hide-small">Go To Top</span>
-        <a class="w3-button w3-theme" href="" onclick="scrollToTop()"
-          ><span class="w3-xlarge">
-            <i class="fa fa-chevron-circle-up"></i></span
-        ></a>
-      </div>
-    </footer>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                      <div class="prod1"><img src="img/handy.png" width="auto"
+                          height="200" alt="bild" class="center">Handy 1
+                        <p class="description">Beschreibung vom Produkt</p>
+                        <p>999.-</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                      <div class="prod1"><img src="img/popsocket.png" width="auto"
+                          height="200" alt="bild" class="center">Handy gadgets 1
+                        <p class="description">Beschreibung vom Produkt</p>
+                        <p>15.-</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="py-3 my-4">
+                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class><a href="index.html"
+                        class="px-2 text-muted">Home</a></li>
+                    <li class><a href="#top" class="px-2 text-muted">To Top</a></li>
+                    <li class><a href="02-team.html" class="px-2 text-muted">Team</a></li>
+                  </ul>
+                  <a href="04-impressum.html"><p class="text-center text-muted">© 2023 Smart-Gadgets, Inc</p></a>
+                </footer>
+                <script>
+        const slider = document.querySelector('.slider');
+const images = document.querySelectorAll('.slider img');
+const imageWidth = images[0].clientWidth;
+let currentIndex = 0;
 
-    <script>
-      // Script for side navigation
-      function w3_open() {
-        var x = document.getElementById("mySidebar");
-        x.style.width = "300px";
-        x.style.paddingTop = "10%";
-        x.style.display = "block";
-      }
-
-      // Close side navigation
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-
-      // Used to toggle the menu on smaller screens when clicking on the menu button
-      function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-      // Globale Variable isVisible, um den Zustand zu speichern
-let isVisible = false;
-
-function showElement() {
-  isVisible = !isVisible;
-  
-  // Element abrufen, das du anzeigen/ausblenden möchtest
-  const showElement = document.getElementById('form');
-
-  if (isVisible) {
-    showElement.style.display = 'block';
-  } else {
-    showElement.style.display = 'none';
-  }
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
 }
 
-function scrollToTop() {
-  const formElement = document.getElementById('top');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
+function previousSlide() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateSlider();
+}
+
+function updateSlider() {
+  images.forEach((image, index) => {
+    if (index === currentIndex) {
+      image.style.display = 'block';
+    } else {
+      image.style.display = 'none';
     }
-  }
+  });
+}
 
-const changeButton = document.getElementById('changeButton');
-changeButton.addEventListener('click', showElement);
+setInterval(nextSlide, 2000); // Automatischer Wechsel alle 2 Sekunden
 
-    </script>
+updateSlider(); // Initialer Zustand
 
-    <span
-      style="
-        border-radius: 10px !important;
-        text-indent: 12px !important;
-        width: auto !important;
-        height: 20px !important;
-        padding: 0px 8px !important;
-        text-align: center !important;
-        vertical-align: middle !important;
-        font: bold 11px / 20px 'Helvetica Neue', Helvetica, sans-serif !important;
-        color: rgb(255, 255, 255) !important;
-        background: url('data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=')
-          4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important;
-        position: absolute !important;
-        opacity: 1 !important;
-        z-index: 8675309 !important;
-        display: none;
-        cursor: pointer !important;
-        border: none !important;
-        -webkit-font-smoothing: antialiased !important;
-        top: 10px;
-        left: 10px;
-      "
-      >Merken</span
-    >
-    <span
-      style="
-        border-radius: 12px;
-        width: 24px !important;
-        height: 24px !important;
-        background: url('data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=')
-          50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important;
-        position: absolute !important;
-        opacity: 1 !important;
-        z-index: 8675309 !important;
-        display: none;
-        cursor: pointer !important;
-        border: none !important;
-        top: 10px;
-        left: 1871px;
-      "
-    ></span>
-  </body>
-</html>
+// Eventlistener für Schaltflächen (optional)
+document.querySelector('.next-button').addEventListener('click', nextSlide);
+document.querySelector('.prev-button').addEventListener('click', previousSlide);
+
+      </script>
+              </body>
+            </html>
