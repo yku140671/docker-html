@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./img:/usr/share/nginx/html/img
+      - ./css:/usr/share/nginx/html/css
+    networks:
+      - webnet
+
+networks:
+  webnet:
