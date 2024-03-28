@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./01-register.html:/usr/share/nginx/html/01-register.html
+      - ./02-team.html:/usr/share/nginx/html/02-team.html
+      - ./03-login.html:/usr/share/nginx/html/03-login.html
+      - ./04-impressum.html:/usr/share/nginx/html/04-impressum.html
+      - ./jstest.html:/usr/share/nginx/html/jstest.html
+      - ./navtest.html:/usr/share/nginx/html/navtest.html
+      - ./img:/usr/share/nginx/html/img
+      - ./css:/usr/share/nginx/html/css
+      - ./js:/usr/share/nginx/html/js
+    networks:
+      - webnet
+
+networks:
+  webnet:

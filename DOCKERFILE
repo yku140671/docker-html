@@ -1,0 +1,19 @@
+# Verwenden Sie das offizielle Nginx-Image als Basis
+FROM nginx:alpine
+
+# Kopieren Sie die HTML-, CSS-, JS- und Bilddateien in das Image
+COPY index.html /usr/share/nginx/html/index.html
+COPY 01-register.html /usr/share/nginx/html/01-register.html
+COPY 02-team.html /usr/share/nginx/html/02-team.html
+COPY 03-login.html /usr/share/nginx/html/03-login.html
+COPY 04-impressum.html /usr/share/nginx/html/04-impressum.html
+COPY jstest.html /usr/share/nginx/html/jstest.html
+COPY navtest.html /usr/share/nginx/html/navtest.html
+COPY img /usr/share/nginx/html/img
+COPY css /usr/share/nginx/html/css
+COPY js /usr/share/nginx/html/js
+
+# Öffnen Sie den Port 80 für eingehende Verbindungen
+EXPOSE 80
+
+# Kein CMD oder ENTRYPOINT erforderlich, da das Standardverhalten des Nginx-Images bereits das Starten des Nginx-Servers ist
